@@ -7,6 +7,8 @@ INSTALLED_APPS += [  # noqa: WPS407, F405
     "drf_spectacular",
 ]
 
+REST_FRAMEWORK["DEFAULT_SCHEMA_CLASS"] = "drf_spectacular.openapi.AutoSchema"  # type: ignore # noqa: F405
+
 SPECTACULAR_SETTINGS = {  # noqa: WPS407
     "TITLE": "Hunter Crud - Hunter Crud API",
     "DESCRIPTION": "A simple Hunter.io CRUD service",
