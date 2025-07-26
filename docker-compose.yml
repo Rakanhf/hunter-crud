@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+
+  app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: hunter-crud-app
+    env_file:
+      - ./config/.env
+    volumes:
+      - ./hunter-crud:/app
+    ports:
+      - "8000:8000"
+    tty: true
+    command: ["python", "manage.py", "runserver", "--nostatic", "0.0.0.0:8000"]

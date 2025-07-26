@@ -1,0 +1,18 @@
+{$CADDY_HOST} {
+  # static
+  handle_path /static/* {
+    root * /app/staticfiles
+    file_server
+  }
+
+  # media
+  handle_path /media/* {
+    root * /app/media
+    file_server
+  }
+
+  # everything else → Django
+  handle {
+    reverse_proxy web:8000
+  }
+}
