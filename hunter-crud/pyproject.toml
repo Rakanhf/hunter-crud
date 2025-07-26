@@ -21,6 +21,7 @@ semver = "^3.0.2"
 toml = "^0.10.2"
 django-unfold = "^0.54.0"
 pydantic = "^2.11.5"
+types-requests = "^2.32.4.20250611"
 
 [tool.poetry.group.docs.dependencies]
 drf-spectacular = "^0.27.2"
