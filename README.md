@@ -10,7 +10,7 @@ Deployed on a Hetzner VPS (CX22) instance and accessible via:
 ## How to Run
 
 ```bash
-git clone git@github.com:Rakanhf/hunter-crud.git
+git clone https://github.com/Rakanhf/hunter-crud.git
 cd hunter-crud
 cp .env.sample .env
 # Edit the .env file with your configuration
